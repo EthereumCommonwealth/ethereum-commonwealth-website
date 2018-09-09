@@ -1,10 +1,7 @@
-'use strict';
-
+import React from 'react';
+import PropTypes from 'prop-types';
 import {injectIntl} from 'react-intl';
 import projects from '../projects.json';
-
-var React = require('react');
-var PropTypes = require('prop-types');
 
 
 function Projects({projects, intl}) {
@@ -56,7 +53,10 @@ function Projects({projects, intl}) {
     );
 }
 
-Projects.propTypes = {};
+Projects.propTypes = {
+    projects: PropTypes.array.isRequired,
+    intl: PropTypes.object.isRequired,
+};
 Projects.defaultProps = {
     projects,
 };

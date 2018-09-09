@@ -1,16 +1,13 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import './TeamMemberCard.css';
 
-export function TeamMemberCard({title, text, href, image, socialNetworks, position}) {
+export function TeamMemberCard({title, text, image, socialNetworks, position}) {
 
 
     return (
         <div className="card text-center">
-
-
             <div className="card-body">
-
                 <img
                     className={'card-img-top'}
                     src={image}
@@ -40,3 +37,13 @@ export function TeamMemberCard({title, text, href, image, socialNetworks, positi
 }
 
 
+TeamMemberCard.propTypes = {
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    href: PropTypes.string,
+    position: PropTypes.string.isRequired,
+    socialNetworks: PropTypes.array,
+    image: PropTypes.node.isRequired,
+};
+
+TeamMemberCard.defaultProps = {};

@@ -1,12 +1,10 @@
-'use strict';
-
+import React from 'react';
+import PropTypes from 'prop-types';
 import {injectIntl} from 'react-intl';
 import {name} from '../team.contact';
 import './Masthead.css';
 
 
-var React = require('react');
-var PropTypes = require('prop-types');
 
 function Masthead({intl}) {
 
@@ -23,7 +21,9 @@ function Masthead({intl}) {
     );
 }
 
-Masthead.propTypes = {};
+Masthead.propTypes = {
+    intl: PropTypes.object.isRequired,
+};
 Masthead.defaultProps = {};
 
 export default injectIntl(Masthead);

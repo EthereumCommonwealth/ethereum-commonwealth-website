@@ -1,8 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {injectIntl} from 'react-intl';
 import './Nav.css';
 
 import contact from '../team.contact.json';
+import projects from "../projects";
 
 
 function Nav({intl}) {
@@ -64,5 +66,10 @@ function Nav({intl}) {
     )
 }
 
+
+Nav.propTypes = {
+    intl: PropTypes.object.isRequired,
+};
+Nav.defaultProps = {};
 
 export default injectIntl(Nav);

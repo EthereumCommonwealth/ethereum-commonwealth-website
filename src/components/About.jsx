@@ -1,11 +1,8 @@
-'use strict';
 
-import {en as translations} from "../translations/en";
+import React from 'react';
+import PropTypes from 'prop-types';
 import {injectIntl} from 'react-intl';
 import './About.css';
-
-var React = require('react');
-var PropTypes = require('prop-types');
 
 
 function About({intl}) {
@@ -40,7 +37,9 @@ function About({intl}) {
     );
 }
 
-About.propTypes = {};
+About.propTypes = {
+    intl: PropTypes.object.isRequired,
+};
 About.defaultProps = {};
 
 export default injectIntl(About);

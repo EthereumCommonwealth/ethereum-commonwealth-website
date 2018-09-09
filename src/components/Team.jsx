@@ -42,7 +42,6 @@ function Team({team, intl}) {
                                 title={member.name}
                                 position={member.position}
                                 text={member.bio}
-                                href={null}
                                 image={mapToAvatar(member.avatar)}
                                 socialNetworks={member.socialNetworks}
                             />
