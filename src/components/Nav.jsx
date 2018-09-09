@@ -15,7 +15,9 @@ function Nav({intl}) {
             <button className="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                <i className={"fas fa-bars text-white"}></i>
+                <i className={"fas fa-bars text-white"}>
+
+                </i>
             </button>
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,7 +44,9 @@ function Nav({intl}) {
                     </li>
                     <li className={'nav-item p-3'}>
                         <a href={"https://github.com/ethereumcommonwealth"}>
-                            <i className={"fab fa-github"}></i>
+                            <i className={"fab fa-github"}>
+
+                            </i>
                         </a>
                     </li>
 
