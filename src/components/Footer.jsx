@@ -8,7 +8,7 @@ import contact from '../team.contact.json';
 function Footer({intl}) {
 
     return (
-        <footer className={'bg-dark text-white py-3 my-3'}>
+        <footer className={'bg-dark text-white py-3'}>
 
             <div className={"row"}>
                 <div className={"col-sm-3"}>

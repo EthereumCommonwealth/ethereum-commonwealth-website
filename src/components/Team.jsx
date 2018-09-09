@@ -16,7 +16,7 @@ function Team({team, intl}) {
                 <div className={"row"}>
                     {team.map((member, index) => {
 
-                        return <div className={'col-xs-12 col-sm-4'} key={member.name + index}>
+                        return <div className={'col-md-6 col-lg-4'} key={member.name + index}>
                             <TeamMemberCard
                                 key={member.name + index}
                                 title={member.name}

@@ -18,7 +18,7 @@ function Projects({projects, intl}) {
                         return (
                             <div
                                 key={project.name + index}
-                                className="col-sm-10 col-lg-8 mx-auto card my-3">
+                                className="col-lg-8 mx-auto card my-3">
                                 <div className="card-body">
                                     <div className={"row"}>
                                         <div className={"col-sm-3"}>
