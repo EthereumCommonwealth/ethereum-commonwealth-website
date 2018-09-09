@@ -31,6 +31,14 @@ const projects = [
 ];
 
 
-fs.writeFile('./projects.json', JSON.stringify(projects, null, 4), () => {
+const trans = projects.map(p => {
+        return {
+            [p.name + '.description']: p.description
+        }
+    }
+);
+
+
+fs.writeFile('./projects.json', JSON.stringify(trans, null, 4), () => {
 
 })

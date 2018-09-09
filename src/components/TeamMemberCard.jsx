@@ -1,14 +1,20 @@
 import React from 'react';
 
+import './TeamMemberCard.css';
 
 export function TeamMemberCard({title, text, href, image, socialNetworks, position}) {
     return (
         <div className="card text-center">
-            <img className="card-img-top" src={image}
-                 width="100"
-                 height={"auto"}
-                 alt="http://ctlatinonews.com/wp-content/uploads/missing-mcsanl.gov_.png"/>
+
+
             <div className="card-body">
+
+                <img
+                    className={'card-img-top'}
+                    src={image}
+                    style={{maxWidth: '200px', height: 'auto'}}
+                    alt=""/>
+
                 <h5 className="card-title">{title}</h5>
                 <h6>{position}</h6>
                 <p className="card-text">{text}</p>

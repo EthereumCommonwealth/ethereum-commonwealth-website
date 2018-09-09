@@ -2,6 +2,7 @@
 
 import {en as translations} from "../translations/en";
 import {injectIntl} from 'react-intl';
+import './About.css';
 
 var React = require('react');
 var PropTypes = require('prop-types');
@@ -10,11 +11,31 @@ var PropTypes = require('prop-types');
 function About({intl}) {
     return (
 
-        <section id={"about"}>
-            <h3>{intl.formatMessage({id: 'about'})}</h3>
-            {intl.formatMessage({id: 'welcome'})}
-            <br/>
-            {intl.formatMessage({id: 'About'})}
+        <section id={"about"} className={'container'}>
+            <h3 className={'text-capitalize'}>{intl.formatMessage({id: 'about'})}</h3>
+            <p>
+                {intl.formatMessage({id: 'about.p1'})}
+            </p>
+            <p>
+                {intl.formatMessage({id: 'about.p2'})}
+            </p>
+
+            <p>
+                <b>Ethereum Commonwealth</b>
+                {intl.formatMessage({id: 'about.p3'})}
+            </p>
+
+            <p>{intl.formatMessage({id: "about.goal.heading"})}
+            </p>
+
+            <ol>
+                <li>
+                    {intl.formatMessage({id: 'about.goal.1'})}
+                </li>
+                <li>
+                    {intl.formatMessage({id: 'about.goal.2'})}
+                </li>
+            </ol>
         </section>
     );
 }

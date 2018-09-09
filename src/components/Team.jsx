@@ -11,12 +11,12 @@ var PropTypes = require('prop-types');
 function Team({team, intl}) {
     return (
         <div className={'container'}>
-            <section id={"team"}> className="container">
-                <h3>{intl.formatMessage({id: 'team'})}</h3>
+            <section id={"team"} className={'container py-3'}>
+                <h3 className={'text-capitalize'}>{intl.formatMessage({id: 'team'})}</h3>
                 <div className={"row"}>
                     {team.map((member, index) => {
 
-                        return <div className={'col-xs-12 col-sm-6 col-lg-3'} key={member.name + index}>
+                        return <div className={'col-xs-12 col-sm-4'} key={member.name + index}>
                             <TeamMemberCard
                                 key={member.name + index}
                                 title={member.name}

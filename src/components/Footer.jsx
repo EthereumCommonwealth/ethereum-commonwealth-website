@@ -3,28 +3,38 @@ import React from 'react';
 import "./Footer.css";
 import {injectIntl} from 'react-intl';
 
+import contact from '../team.contact.json';
+
 function Footer({intl}) {
 
     return (
-        <div className={'bg-dark text-white'}>
+        <footer className={'bg-dark text-white py-3 my-3'}>
 
             <div className={"row"}>
                 <div className={"col-sm-3"}>
                     <h3>
-                        Ethereum Commonwealth
+                        {contact.name}
                     </h3>
 
                 </div>
                 <div className={"col-sm-9"}>
                     <nav>
-                        <ul>
-                            <li>
-                                <a>
-                                    github
+                        <ul className={'nav nav-list'}>
+                            <li className={'list-item'}>
+                                <a
+
+                                    href={contact.homepage} target={'_blank'} rel={"noopener"}>
+                                    <i className={'fab fa-github'}>
+
+                                    </i>
                                 </a>
                             </li>
                             <li>
-                                <a>twitter</a>
+                                <a href={'#'}>
+                                    <i className={'fab fa-twitter'}>
+
+                                    </i>
+                                </a>
                             </li>
                             <li>
                                 <a>
@@ -38,7 +48,7 @@ function Footer({intl}) {
                     </nav>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 
