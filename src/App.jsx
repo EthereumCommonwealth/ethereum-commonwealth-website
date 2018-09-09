@@ -33,6 +33,7 @@ import tr from 'react-intl/locale-data/tr';
 import uk from 'react-intl/locale-data/uk';
 import vi from 'react-intl/locale-data/vi';
 import zh from 'react-intl/locale-data/zh';
+import ScrollTop from "./components/ScrollTop";
 
 
 addLocaleData([
@@ -78,6 +79,7 @@ export default function App() {
                 <Projects/>
                 <Team/>
                 <Footer/>
+                <ScrollTop/>
             </div>
         </IntlProvider>
 

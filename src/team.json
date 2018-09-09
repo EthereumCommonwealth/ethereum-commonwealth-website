@@ -1,6 +1,6 @@
 [
   {
-    "avatar": "/image/avatars/dexaran_avatar.png",
+    "avatar": "/image/avatars/dexaran_avatar",
     "name": "Dexaran",
     "position": "CEO, Security Engineer",
     "socialNetworks": [
@@ -16,7 +16,7 @@
     "bio": "My main specialty is information security. I’ve been an Ethereum smart-contracts developer since its first days. I created the ERC223 token standard and founded DEX ICO and the Ethereum Commonwealth. I was formerly a security auditor."
   },
   {
-    "avatar": "/image/avatars/yohan_avatar.jpg",
+    "avatar": "/image/avatars/yohan_avatar",
     "name": "Yohan Graterol",
     "position": "CTO & Main Callisto Developer",
     "socialNetworks": [
@@ -48,7 +48,7 @@
     "bio": "Hi, I’m a backend developer (Python and Go) with over seven years of experience. I have worked for as a Head of Product for three years. The cryptocurrency world is my passion."
   },
   {
-    "avatar": "/image/avatars/jchimienti_avatar.jpg",
+    "avatar": "/image/avatars/jchimienti_avatar",
     "name": "Joe Chimienti",
     "position": "Head of Web Development",
     "socialNetworks": [

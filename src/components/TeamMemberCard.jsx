@@ -3,6 +3,8 @@ import React from 'react';
 import './TeamMemberCard.css';
 
 export function TeamMemberCard({title, text, href, image, socialNetworks, position}) {
+
+
     return (
         <div className="card text-center">
 

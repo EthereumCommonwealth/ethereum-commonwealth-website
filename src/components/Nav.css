@@ -1,10 +1,37 @@
-nav a {
+#mainNav {
+
+    padding: 25px 0;
+    transition: padding 0.3s ease-in-out;
+}
+
+#mainNav.navbar-shrink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#mainNav.navbar-shrink a {
+    font-size: 1.25em;
+}
+
+
+.navbar-nav a, .navbar-link {
+
+    color: grey;
+    font-size: 1.25em;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.navbar-nav a:hover , .navbar-link:hover {
 
     color: white;
 }
 
 
-.navbar-toggler-icon {
+@media all and (min-width: 768px) {
 
-    color: white;
+    .navbar-nav a, .navbar-link {
+
+        font-size: 2em;
+    }
 }
+
