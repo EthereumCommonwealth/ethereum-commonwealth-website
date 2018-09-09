@@ -22,7 +22,7 @@ export function TeamMemberCard({title, text, href, image, socialNetworks, positi
                     {socialNetworks.map((network, index) => {
                         return <a
                             key={network.url + network.prefix + index}
-                            className="btn"
+                            className="btn btn-social"
                             target={"_blank"}
                             rel={"noopener noreferrer"}
                             href={network.url}

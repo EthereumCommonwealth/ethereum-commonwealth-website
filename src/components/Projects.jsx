@@ -11,7 +11,7 @@ function Projects({projects, intl}) {
     return (
         <section id={"projects"} className={'bg-secondary'}>
             <div className={'container py-3'}>
-                <h3 className={'text-capitalize'}>{intl.formatMessage({id: 'projects'})}</h3>
+                <h2 className={'text-capitalize'}>{intl.formatMessage({id: 'projects'})}</h2>
                 <div className={"row"}>
                     {projects.map((project, index) => {
 

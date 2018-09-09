@@ -2,15 +2,17 @@
 
 import {injectIntl} from 'react-intl';
 import {name} from '../team.contact';
+import './Masthead.css';
+
 
 var React = require('react');
 var PropTypes = require('prop-types');
 
-function Welcome({intl}) {
+function Masthead({intl}) {
 
     const [ethereum, commonwealth] = name.split(" ");
     return (
-        <section style={{height: '80vh'}} className={'bg-dark text-white'}>
+        <section style={{height: '80vh'}} className={'container-fluid bg-dark text-white masthead'}>
             <h1>
                 <span className={"text-primary bg-info"}>{ethereum}</span>
                 <br/>
@@ -21,7 +23,7 @@ function Welcome({intl}) {
     );
 }
 
-Welcome.propTypes = {};
-Welcome.defaultProps = {};
+Masthead.propTypes = {};
+Masthead.defaultProps = {};
 
-export default injectIntl(Welcome);
+export default injectIntl(Masthead);

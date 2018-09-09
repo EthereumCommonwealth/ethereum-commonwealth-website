@@ -1,0 +1,17 @@
+.masthead h1 {
+    font-size: 2em;
+    font-weight: 700;
+
+    display: block;
+    padding: 2rem 0;
+
+    text-transform: uppercase;
+}
+
+@media all and (min-width: 768px) {
+
+    .masthead h1 {
+
+        font-size: 4.75em;
+    }
+}

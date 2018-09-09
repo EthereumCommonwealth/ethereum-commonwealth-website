@@ -12,7 +12,7 @@ function Team({team, intl}) {
     return (
         <div className={'container'}>
             <section id={"team"} className={'container py-3'}>
-                <h3 className={'text-capitalize'}>{intl.formatMessage({id: 'team'})}</h3>
+                <h2 className={'text-capitalize'}>{intl.formatMessage({id: 'team'})}</h2>
                 <div className={"row"}>
                     {team.map((member, index) => {
 

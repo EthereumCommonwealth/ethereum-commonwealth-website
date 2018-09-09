@@ -12,7 +12,7 @@ function About({intl}) {
     return (
 
         <section id={"about"} className={'container'}>
-            <h3 className={'text-capitalize'}>{intl.formatMessage({id: 'about'})}</h3>
+            <h2 className={'text-capitalize'}>{intl.formatMessage({id: 'about'})}</h2>
             <p>
                 {intl.formatMessage({id: 'about.p1'})}
             </p>
