@@ -51,7 +51,7 @@ function Nav({intl}) {
                     </li>
                     <li className={'nav-item p-3 text-primary'}>
                         <a href={"https://github.com/ethereumcommonwealth"}>
-                            <i className={"navbar-link fab fa-github text-primary"}>
+                            <i className={"fab fa-github text-primary"}>
 
                             </i>
                         </a>
