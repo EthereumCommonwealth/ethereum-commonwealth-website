@@ -30,26 +30,26 @@ function mapToAvatar(avatarStr) {
 
 function Team({team, intl}) {
     return (
-        <div className={'container'}>
-            <section id={"team"} className={'container py-3'}>
-                <h2 className={'text-capitalize'}>{intl.formatMessage({id: 'team'})}</h2>
-                <div className={"row justify-content-center align-items-center"}>
-                    {team.map((member, index) => {
+        <section id={"team"} >
+           <div className={'container py-3'}>
+               <h2 className={'text-capitalize'}>{intl.formatMessage({id: 'team'})}</h2>
+               <div className={"row justify-content-center align-items-center"}>
+                   {team.map((member, index) => {
 
-                        return <div className={'col-md-6 col-lg-4'} key={member.name + index}>
-                            <TeamMemberCard
-                                key={member.name + index}
-                                title={member.name}
-                                position={member.position}
-                                text={member.bio}
-                                image={mapToAvatar(member.avatar)}
-                                socialNetworks={member.socialNetworks}
-                            />
-                        </div>;
-                    })}
-                </div>
-            </section>
-        </div>
+                       return <div className={'col-md-6 col-lg-4'} key={member.name + index}>
+                           <TeamMemberCard
+                               key={member.name + index}
+                               title={member.name}
+                               position={member.position}
+                               text={member.bio}
+                               image={mapToAvatar(member.avatar)}
+                               socialNetworks={member.socialNetworks}
+                           />
+                       </div>;
+                   })}
+               </div>
+           </div>
+        </section>
     );
 }
 

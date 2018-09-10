@@ -5,15 +5,26 @@ import './Nav.css';
 
 import contact from '../team.contact.json';
 import projects from "../projects";
+import $ from 'jquery/dist/jquery.min';
+
+$(window).scroll(function () {
+    if ($("#mainNav").offset().top > 100) {
+        $("#mainNav").addClass("navbar-shrink");
+    } else {
+        $("#mainNav").removeClass("navbar-shrink");
+    }
+});
 
 
 function Nav({intl}) {
     return (
         <nav className="navbar navbar-expand-sm bg-dark text-white fixed-top" id={"mainNav"}>
             <a className="navbar-brand" href={contact.homepage}>
-                <img src={"https://avatars1.githubusercontent.com/u/31843178?s=200&v=4"}
-                     width={"36"}
-                     height={"auto"}
+                <img
+                    className={'rounded-circle m-2'}
+                    src={"https://avatars1.githubusercontent.com/u/31843178?s=200&v=4"}
+                    width={"50"}
+                    height={"auto"}
                 />
             </a>
             <button className="navbar-toggler"
@@ -33,7 +44,7 @@ function Nav({intl}) {
                 <ul className="navbar-nav d-flex justify-content-end align-items-center" style={{width: '100%'}}>
 
                     <li className={"nav-item p-3"}>
-                        <a className={'text-capitalize text-grey'} href={"#about"}>
+                        <a className={'text-capitalize'} href={"#about"}>
                             {intl.formatMessage({id: 'about'})}
                         </a>
 

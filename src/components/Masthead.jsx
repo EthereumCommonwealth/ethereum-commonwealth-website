@@ -12,7 +12,7 @@ function Masthead({intl}) {
     return (
         <section style={{height: '100vh'}} className={'container-fluid bg-dark text-white masthead'}>
             <h1>
-                <span className={"text-primary bg-info my-2 p-2 py-lg-3 px-lg-4"}>{ethereum}</span>
+                <span className={"text-primary bg-info pl-4 pr-2 py-2"}>{ethereum}</span>
                 <br/>
                 <span className={"text-white my-1"}>{commonwealth}</span>
             </h1>

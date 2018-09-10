@@ -2,3 +2,15 @@ footer {
 
     min-height: 200px;
 }
+
+footer nav a {
+
+    color: lightgreen;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+footer nav a:hover {
+
+    color: white;
+}
