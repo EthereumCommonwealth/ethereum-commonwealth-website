@@ -9,9 +9,10 @@ function About({intl}) {
 
         <section id={"about"} className={'container'}>
             <h2 className={'text-capitalize'}>{intl.formatMessage({id: 'about'})}</h2>
+            <hr/>
 
-            <div className={'row'}>
-                <div className={'col-lg-6 offset-lg-3'}>
+            <div className={'row justify-content-center'}>
+                <div className={'col-md-10 col-lg-9'}>
                     <p>
                         {intl.formatMessage({id: 'about.p1'})}
                     </p>
