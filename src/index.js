@@ -1,18 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-
-
-// import 'popper.js/dist/popper.min';
 import "bootstrap/dist/js/bootstrap.min";
-
+import {smoothScroll, shrinkNavbarShowScrollTopButton} from './customCss';
 
 import registerServiceWorker from './registerServiceWorker';
-
+import App from './App';
+import './index.css';
 
 ReactDOM.render(<App/>, document.getElementById('root'));
+registerServiceWorker();
 
-// registerServiceWorker();
-
-
+smoothScroll();
+shrinkNavbarShowScrollTopButton();

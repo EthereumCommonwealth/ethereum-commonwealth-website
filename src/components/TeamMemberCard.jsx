@@ -6,12 +6,12 @@ export function TeamMemberCard({title, text, image, socialNetworks, position}) {
 
 
     return (
-        <div className="card text-center">
+        <div className="col-md-4 card text-center">
             <div className="card-body">
                 <img
                     className={'card-img-top'}
                     src={image}
-                    style={{maxWidth: '200px', height: 'auto'}}
+                    style={{maxWidth: '150px', height: 'auto'}}
                     alt=""/>
 
                 <h5 className="card-title">{title}</h5>

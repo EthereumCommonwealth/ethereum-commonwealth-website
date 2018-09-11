@@ -28,35 +28,35 @@ function Footer({intl}) {
                                         href={contact.homepage}
                                         target={'_blank'}
                                         rel={"noopener"}>
-                                        <i className={'fab fa-github'}>
+                                        <i className={'fab fa-2x fa-github'}>
 
                                         </i>
-                                        Github
+
                                     </a>
                                 </li>
                                 <li className={'list-item px-2'}>
                                     <a
                                         className={''}
                                         href={'#'}>
-                                        <i className={'fab fa-twitter'} rel="noopener noreferrer">
+                                        <i className={'fab fa-2x fa-twitter'} rel="noopener noreferrer">
 
 
                                         </i>
-                                        Twitter
+
                                     </a>
                                 </li>
                                 <li className={'list-item px-2'}>
                                     <a className={''} href={"#"}>
-                                        <i className={'fab fa-telegram'}>
+                                        <i className={'fab fa-2x fa-telegram'}>
                                         </i>
-                                        Telegram
+
                                     </a>
                                 </li>
                                 <li className={'list-item px-2'}>
                                     <a className={''} href={"#"}>
-                                        <i className={'fab fa-discord'}>
+                                        <i className={'fab fa-2x fa-discord'}>
                                         </i>
-                                        Discord
+
                                     </a>
                                 </li>
                             </ul>

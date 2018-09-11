@@ -5,15 +5,7 @@ import './Nav.css';
 
 import contact from '../team.contact.json';
 import projects from "../projects";
-import $ from 'jquery/dist/jquery.min';
 
-$(window).scroll(function () {
-    if ($("#mainNav").offset().top > 100) {
-        $("#mainNav").addClass("navbar-shrink");
-    } else {
-        $("#mainNav").removeClass("navbar-shrink");
-    }
-});
 
 
 function Nav({intl}) {

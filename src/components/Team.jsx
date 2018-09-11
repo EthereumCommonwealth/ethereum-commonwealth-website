@@ -33,11 +33,11 @@ function Team({team, intl}) {
         <section id={"team"} >
            <div className={'container py-3'}>
                <h2 className={'text-capitalize'}>{intl.formatMessage({id: 'team'})}</h2>
-               <div className={"row justify-content-center align-items-center"}>
+               <hr/>
+               <div className={"card-group"}>
                    {team.map((member, index) => {
 
-                       return <div className={'col-md-6 col-lg-4'} key={member.name + index}>
-                           <TeamMemberCard
+                       return <TeamMemberCard
                                key={member.name + index}
                                title={member.name}
                                position={member.position}
@@ -45,7 +45,6 @@ function Team({team, intl}) {
                                image={mapToAvatar(member.avatar)}
                                socialNetworks={member.socialNetworks}
                            />
-                       </div>;
                    })}
                </div>
            </div>
