@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.5dc2e9c4.css",
-  "main.css.map": "static/css/main.5dc2e9c4.css.map",
-  "main.js": "static/js/main.15ed3036.js",
-  "main.js.map": "static/js/main.15ed3036.js.map",
+  "main.css": "static/css/main.8e52e0e1.css",
+  "main.css.map": "static/css/main.8e52e0e1.css.map",
+  "main.js": "static/js/main.e5ec03de.js",
+  "main.js.map": "static/js/main.e5ec03de.js.map",
   "static/media/dexaran_avatar.png": "static/media/dexaran_avatar.5405de41.png",
   "static/media/fontawesome-webfont.eot": "static/media/fontawesome-webfont.674f50d2.eot",
   "static/media/fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
@@ -10,5 +10,7 @@
   "static/media/fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
   "static/media/fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff",
   "static/media/jchimienti_avatar.jpg": "static/media/jchimienti_avatar.4dbcabc8.jpg",
+  "static/media/logo-clo.svg": "static/media/logo-clo.e98f3d91.svg",
+  "static/media/logo-etc.png": "static/media/logo-etc.6c58656d.png",
   "static/media/yohan_avatar.jpg": "static/media/yohan_avatar.37227dbb.jpg"
 }
