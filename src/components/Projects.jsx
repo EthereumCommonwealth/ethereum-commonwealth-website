@@ -13,7 +13,7 @@ function Projects({projects, intl}) {
         <section id={"projects"} className={'bg-light'}>
             <div className={'container py-3'}>
                 <h2 className={'text-capitalize'}>{intl.formatMessage({id: 'projects'})}</h2>
-                <hr/>
+                <hr className={'bg-success my-3'}/>
                 {projects.map((project, index) => {
                     return (
                        <ProjectCard

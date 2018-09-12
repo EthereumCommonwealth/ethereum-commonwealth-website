@@ -48,6 +48,15 @@ section h2 {
     margin: 0;
 }
 
+section hr.bg-success {
+
+    margin: 0;
+    height: 0.5em;
+    border: none;
+    padding: 0;
+    width: 100px;
+}
+
 .scroll-top {
     position: fixed;
     z-index: 1049;

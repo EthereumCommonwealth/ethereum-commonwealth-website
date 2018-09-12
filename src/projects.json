@@ -18,7 +18,12 @@
         "description": "The main goal of Callisto is to research and develop a reference implementation of a self-sustaining, self-goverened and self-funded blockchain ecosystem and development environment.",
         "url": "https://callisto.network/",
         "avatar": "logo_clo",
-        "socialNetworks": []
+        "socialNetworks": [
+            {
+                "url": "https://github.com/EthereumCommonwealth/go-callisto",
+                "prefix": "fab fa-github"
+            }
+        ]
     },
     {
         "name": "0xinfra",
@@ -27,10 +32,20 @@
         "socialNetworks": []
     },
     {
-        "name": "ClassicEtherWallet",
+        "name": "CEW",
         "avatar": "logo_etc",
         "description": "ClassicEtherWallet is an open source, javascript, client-side tool for operating Ethereum Classic wallets",
         "url": "https://ethereumproject.github.io/etherwallet/",
-        "socialNetworks": []
+        "socialNetworks": [
+            {
+                "url": "https://github.com/ethereumcommonwealth/etherwallet/",
+                "prefix": "fab fa-github"
+            },
+            {
+
+                "url": "https://ethereumproject.github.io/etherwallet/",
+                "prefix": "web"
+            }
+        ]
     }
 ]

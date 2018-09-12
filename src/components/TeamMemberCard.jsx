@@ -6,7 +6,7 @@ export function TeamMemberCard({title, text, image, socialNetworks, position}) {
 
 
     return (
-        <div className="col-md-6 col-lg-4 card text-center">
+        <div className="col-md-6 col-lg-4 card text-center teamCard">
             <div className="card-body">
 
                 <div className={'d-flex justify-content-center'}>
