@@ -1,5 +1,4 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-@import "~font-awesome/css/font-awesome.min.css";
 
 .btn-social {
     font-size: 20px;
@@ -70,4 +69,11 @@ section h2 {
 
 .scroll-top .btn:focus {
     outline: none;
+}
+
+.active {
+
+    background: red;
+    color: blue;
+    font-size: 4em;
 }

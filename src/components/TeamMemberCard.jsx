@@ -6,16 +6,17 @@ export function TeamMemberCard({title, text, image, socialNetworks, position}) {
 
 
     return (
-        <div className="col-md-4 card text-center">
+        <div className="col-md-6 col-lg-4 card text-center">
             <div className="card-body">
-                <img
-                    className={'card-img-top'}
-                    src={image}
-                    style={{maxWidth: '150px', height: 'auto'}}
-                    alt=""/>
 
-                <h5 className="card-title">{title}</h5>
-                <h6>{position}</h6>
+                <div className={'avatar-image rounded-circle'} style={{
+
+                    backgroundImage: `url(${image})`
+                }}>
+                </div>
+
+                <h5 className="card-title py-3">{title}</h5>
+                <h6 className={'py-3'}>{position}</h6>
                 <p className="card-text">{text}</p>
                 <p>
                     {socialNetworks.map((network, index) => {
