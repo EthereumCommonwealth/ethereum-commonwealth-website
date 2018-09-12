@@ -9,10 +9,13 @@ export function TeamMemberCard({title, text, image, socialNetworks, position}) {
         <div className="col-md-6 col-lg-4 card text-center">
             <div className="card-body">
 
+                <div className={'d-flex justify-content-center'}>
+
                 <div className={'avatar-image rounded-circle'} style={{
 
                     backgroundImage: `url(${image})`
                 }}>
+                </div>
                 </div>
 
                 <h5 className="card-title py-3">{title}</h5>
