@@ -34,7 +34,7 @@ function Team({team, intl}) {
            <div className={'container py-3'}>
                <h2 className={'text-capitalize'}>{intl.formatMessage({id: 'team'})}</h2>
                <hr/>
-               <div className={"card-group"}>
+               <div className={"row d-flex justify-content-center"}>
                    {team.map((member, index) => {
 
                        return <TeamMemberCard

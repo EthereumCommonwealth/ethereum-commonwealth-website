@@ -1,4 +1,9 @@
-import $ from "jquery/dist/jquery.min";
+import $ from 'jquery';
+import 'bootstrap/dist/js/bootstrap.min'
+
+export function hideScrollTop() {
+    $('#scrollTop').hide();
+}
 
 export function smoothScroll() {
 
@@ -6,15 +11,18 @@ export function smoothScroll() {
     // Remove links that don't actually link to anything
         .not('[href="#"]')
         .not('[href="#0"]')
-        .click(function(event) {
+        .click(function (event) {
             // On-page links
             if (
-                window.location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                window.location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
                 &&
-                window.location.hostname == this.hostname
+                window.location.hostname === this.hostname
             ) {
+
+                $('.navbar-collapse').collapse('hide');
+
                 // Figure out element to scroll to
-                var target = $(this.hash);
+                let target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 // Does a scroll target exist?
                 if (target.length) {
@@ -22,17 +30,18 @@ export function smoothScroll() {
                     event.preventDefault();
                     $('html, body').animate({
                         scrollTop: target.offset().top
-                    }, 1000, function() {
+                    }, 1000, function () {
                         // Callback after animation
                         // Must change focus!
-                        var $target = $(target);
+                        const $target = $(target);
                         $target.focus();
                         if ($target.is(":focus")) { // Checking if the target was focused
                             return false;
                         } else {
-                            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
                             $target.focus(); // Set focus again
-                        };
+                        }
+                        ;
                     });
                 }
             }
