@@ -1,3 +1,9 @@
+section.masthead {
+
+    padding: 3em 0;
+    min-height: 85vh;
+}
+
 .masthead h1 {
     font-size: 2em;
     font-weight: 700;
