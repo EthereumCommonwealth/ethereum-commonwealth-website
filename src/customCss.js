@@ -1,9 +1,6 @@
 import $ from 'jquery';
 import 'bootstrap/dist/js/bootstrap.min'
 
-export function hideScrollTop() {
-    $('#scrollTop').hide();
-}
 
 export function smoothScroll() {
 
@@ -19,7 +16,6 @@ export function smoothScroll() {
                 window.location.hostname === this.hostname
             ) {
 
-                $('.navbar-collapse').collapse('hide');
 
                 // Figure out element to scroll to
                 let target = $(this.hash);
@@ -28,6 +24,7 @@ export function smoothScroll() {
                 if (target.length) {
                     // Only prevent default if animation is actually gonna happen
                     event.preventDefault();
+                    $('.navbar-collapse').collapse('hide');
                     $('html, body').animate({
                         scrollTop: target.offset().top
                     }, 1000, function () {
@@ -41,26 +38,9 @@ export function smoothScroll() {
                             $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
                             $target.focus(); // Set focus again
                         }
-                        ;
                     });
                 }
             }
         });
 }
 
-
-export function shrinkNavbarShowScrollTopButton() {
-
-    $(window).scroll(function () {
-        if ($("#mainNav").offset().top > 100) {
-            $("#mainNav").addClass("navbar-shrink");
-
-            $('#scrollTop').show();
-
-        } else {
-            $("#mainNav").removeClass("navbar-shrink");
-            $('#scrollTop').hide();
-        }
-    });
-
-}

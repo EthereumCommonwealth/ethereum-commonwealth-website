@@ -6,17 +6,9 @@ import './Nav.css';
 import contact from '../team.contact.json';
 import projects from "../projects";
 
-
-// // Activate scrollspy to add active class to navbar items on scroll
-// $('body').scrollspy({
-//     target: '#mainNav',
-//     offset: 54
-// });
-
 function Nav({intl}) {
     return (
-
-            <nav className="navbar navbar-expand-sm bg-dark text-white fixed-top" id={"mainNav"}>
+            <nav className="navbar navbar-expand-sm bg-dark text-white" id={"mainNav"}>
                 <a className="navbar-brand" href={contact.homepage}>
                     <img
                         className={'rounded-circle m-2'}

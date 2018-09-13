@@ -8,7 +8,4 @@ import {smoothScroll, shrinkNavbarShowScrollTopButton, hideScrollTop} from './cu
 ReactDOM.render(<App/>, document.getElementById('root'));
 
 registerServiceWorker();
-
 smoothScroll();
-hideScrollTop();
-shrinkNavbarShowScrollTopButton();

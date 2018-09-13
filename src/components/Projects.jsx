@@ -7,20 +7,21 @@ import './Projects.css';
 import ProjectCard from "./ProjectCard";
 
 
-
 function Projects({projects, intl}) {
     return (
         <section id={"projects"} className={'bg-light'}>
             <div className={'container py-3'}>
                 <h2 className={'text-capitalize'}>{intl.formatMessage({id: 'projects'})}</h2>
                 <hr className={'bg-success my-3'}/>
-                {projects.map((project, index) => {
-                    return (
-                       <ProjectCard
-                           project={project}
-                           key={project.name + index}/>
-                    );
-                })}
+                <div className={'row'}>
+                    {projects.map((project, index) => {
+                        return (
+                            <ProjectCard
+                                project={project}
+                                key={project.name + index}/>
+                        );
+                    })}
+                </div>
             </div>
         </section>
     );

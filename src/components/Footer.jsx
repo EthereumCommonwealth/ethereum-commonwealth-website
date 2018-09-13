@@ -8,54 +8,47 @@ import contact from '../team.contact.json';
 function Footer({intl}) {
 
     return (
-        <footer className={'bg-secondary text-white py-3'}>
+        <footer className={'bg-secondary text-white py-5'}>
 
             <div className={'container'}>
                 <div className={"row"}>
-                    <div className={"col-sm-3"}>
+                    <div className={"col-md-3"}>
                         <h2>
                             {contact.name}
                         </h2>
 
                     </div>
-                    <div className={"col-sm-9"}>
-                        <nav className={'row justify-content-end align-items-center'}>
+                    <div className={"col-md-9"}>
+                        <nav className={'row d-flex justify-content-end align-items-center'}>
                             <ul className={'nav nav-list'}>
-                                <li className={'list-item px-2'}>
+                                <li className={'list-item px-4'}>
                                     <a
 
                                         className={''}
                                         href={contact.homepage}
                                         target={'_blank'}
                                         rel={"noopener"}>
-                                        <i className={'fab fa-2x fa-github'}>
 
-                                        </i>
-
+                                        github
                                     </a>
                                 </li>
-                                <li className={'list-item px-2'}>
+                                <li className={'list-item px-4'}>
                                     <a
                                         className={''}
                                         href={'#'}>
-                                        <i className={'fab fa-2x fa-twitter'} rel="noopener noreferrer">
-
-
-                                        </i>
+                                        twitter
 
                                     </a>
                                 </li>
-                                <li className={'list-item px-2'}>
+                                <li className={'list-item px-4'}>
                                     <a className={''} href={"#"}>
-                                        <i className={'fab fa-2x fa-telegram'}>
-                                        </i>
+                                        telegram
 
                                     </a>
                                 </li>
-                                <li className={'list-item px-2'}>
+                                <li className={'list-item px-4'}>
                                     <a className={''} href={"#"}>
-                                        <i className={'fab fa-2x fa-discord'}>
-                                        </i>
+                                        discord
 
                                     </a>
                                 </li>
@@ -65,7 +58,7 @@ function Footer({intl}) {
                 </div>
 
                 <div className={'row'}>
-                    2018 Ethereum Commonwealth
+                    ©2018 {contact.name}
                 </div>
             </div>
         </footer>

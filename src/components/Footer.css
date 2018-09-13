@@ -8,7 +8,9 @@ footer nav a {
     color: lightgreen;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
+    text-transform: capitalize;
 }
+
 
 footer nav a:hover {
 

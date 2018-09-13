@@ -10,9 +10,9 @@ function Masthead({intl}) {
 
     const [ethereum, commonwealth] = name.split(" ");
     return (
-        <section style={{height: '100vh'}} className={'container-fluid bg-dark text-white masthead'}>
+        <section style={{minHeight: '100vh'}} className={'container-fluid bg-dark text-white masthead'}>
             <h1>
-                <span className={"text-primary bg-info p-4"}>{ethereum}</span>
+                <span className={"text-primary bg-info ml-5 p-4"}>{ethereum}</span>
                 <span className={"text-white commonwealth"}>{commonwealth}</span>
             </h1>
             <p> {intl.formatMessage({id: 'goal'})}</p>
