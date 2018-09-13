@@ -19,7 +19,7 @@ function mapToLogo(avatar) {
 
 function ProjectCard({project, intl}) {
     return (
-        <div className="card mx-auto my-4">
+        <div className="card mx-auto my-4 shadow">
             <div className="card-body">
                 <div className={"row p-2"}>
                     <div className={"col-md-4"}>
