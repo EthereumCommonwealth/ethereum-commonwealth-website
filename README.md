@@ -6,6 +6,9 @@
 
 ### Dev
 
+Team Members, projects, and team contract info
+ are located in src/team.json and src/projects.json and team.contact.json
+
 `npm run start`
 
 ### Build
