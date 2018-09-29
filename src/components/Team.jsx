@@ -28,8 +28,8 @@ function mapToAvatar(avatarStr) {
 
 function Team({ team, intl }) {
   return (
-    <section id="team" className={'container py-3'}>
-        <h2>
+    <section id="team" className={'container'}>
+        <h2 className={'pl-5'}>
             {intl.formatMessage({ id: 'team' })}
             <img src={union} width={'15px'} height={'15px'}/>
             </h2>

@@ -14,12 +14,9 @@ function Footer({intl}) {
                 <div className="row">
                     <div className="col-md-4 d-flex align-items-center">
                         <img src={union} height={'96px'} width={'96px'}/>
-                        <h2 className={'text-capitalize'}>
+                        <h2 className={'pl-2 text-capitalize'}>
                             {contact.name}
                         </h2>
-
-
-
 
                     </div>
 
@@ -63,7 +60,7 @@ function Footer({intl}) {
                         </nav>
                     </div>
                 </div>
-                <div className="row small text-secondary" style={{paddingLeft: '96px'}}>
+                <div className="row small" style={{paddingLeft: '96px', color: '#ACC1D3'}}>
                     {'© 2018 '}
                     <span className={'text-capitalize'}>
                         {contact.name}
