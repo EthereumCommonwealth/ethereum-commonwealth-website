@@ -73,7 +73,7 @@ export default function App() {
             defaultLocale={'en'}
         >
             <div>
-                <Nav/>
+
                 <Welcome/>
                 <About/>
                 <Projects/>

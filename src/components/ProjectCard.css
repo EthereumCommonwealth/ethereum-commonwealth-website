@@ -1,0 +1,42 @@
+.btn-view {
+
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #00D0AD;
+    border-radius: 12px;
+    color: #FFFFFF;
+    transition: transform, box-shadow .2s ease-in-out;
+}
+
+.btn-view:hover {
+    transform: scale(1.05);
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(5, 214, 178, 0.6);
+}
+
+.social-link {
+
+    color: #B9C8D6;
+
+}
+
+.social-link:hover {
+    color: var(--green);
+}
+
+
+.project-card.card {
+
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(40, 53, 64, 0.06);
+}
+
+.project-card.card-text {
+    font-size: 1rem;
+    color: var(--dark-gray);
+    font-weight: 500;
+}

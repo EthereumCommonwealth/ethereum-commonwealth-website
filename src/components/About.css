@@ -1,4 +1,18 @@
 #about section {
 
+    z-index: 10;
     min-height: 80vh;
+}
+
+
+#about p, #about li {
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 29px;
+    font-size: 18px;
+
+    /* Gr */
+    color: #728699;
 }
