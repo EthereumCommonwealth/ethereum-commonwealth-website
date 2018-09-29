@@ -9,7 +9,7 @@ import { TeamMemberCard } from './TeamMemberCard';
 import dexaran_avatar from '../image/avatars/dexaran_avatar.png';
 import yohan_avatar from '../image/avatars/yohan_avatar.jpg';
 import jchimienti_avatar from '../image/avatars/jchimienti_avatar.jpg';
-
+import union from '../image/Union.svg';
 
 const avatars = {
   dexaran_avatar,
@@ -28,10 +28,12 @@ function mapToAvatar(avatarStr) {
 
 function Team({ team, intl }) {
   return (
-    <section id="team">
-      <div className="container py-3">
-        <h2 className="text-capitalize">{intl.formatMessage({ id: 'team' })}</h2>
-        <hr className="bg-success" />
+    <section id="team" className={'container py-3'}>
+        <h2>
+            {intl.formatMessage({ id: 'team' })}
+            <img src={union} width={'15px'} height={'15px'}/>
+            </h2>
+        <hr className="bg-secondary" />
         <div className="row d-flex justify-content-center my-3">
           {team.map((member, index) => (
             <TeamMemberCard
@@ -44,7 +46,6 @@ function Team({ team, intl }) {
             />
           ))}
         </div>
-      </div>
     </section>
   );
 }

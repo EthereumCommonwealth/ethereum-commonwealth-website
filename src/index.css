@@ -1,4 +1,33 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+
+    --green: #00D0AD;
+    --gray:  #F2F6F9;
+    --dark-gray: #728699;
+}
+
+.bg-grey, .bg-gray {
+    background:var(--gray);
+}
+
+.text-success {
+    color: var(--green) !important;
+}
+
+.btn-success {
+
+    color: var(--green) !important;
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 29px;
+}
 
 .btn-social {
     font-size: 20px;
@@ -12,6 +41,7 @@
 }
 
 p {
+    color: #728699;
     font-size: 20px;
 }
 
@@ -44,18 +74,30 @@ section {
 }
 
 section h2 {
-    font-size: 3em;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #384958;
 }
 
-section hr.bg-success {
+section hr {
 
-    margin: 0;
-    height: 0.5em;
+    margin-left: 0;
     border: none;
     padding: 0;
-    width: 100px;
+    width: 70px;
+    height: 5px;
 }
+
+section hr.bg-secondary {
+    background: #728699;
+}
+
 
 .scroll-top {
     position: fixed;
@@ -80,9 +122,15 @@ section hr.bg-success {
     outline: none;
 }
 
-.active {
-
-    background: red;
-    color: blue;
-    font-size: 4em;
+.star {
+    color: var(--green);
+    width: 6px;
+    height: 6px;
+    z-index: 2;
 }
+
+
+.card-text {
+    font-weight: 500;
+}
+

@@ -1,34 +1,25 @@
-#mainNav {
-    padding: 25px 0;
-    transition: padding 0.3s ease-in-out;
-}
-
-#mainNav.navbar-shrink {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
 
 .navbar-nav a {
 
-    color: grey;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 51px;
+    cursor: pointer;
+
+
+    /* Gr */
+    color: #728699 !important;
     font-size: 1.25em;
-    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: font-size 0.3s linear, color 0.3s linear;
 }
 
 
 
 .navbar-nav a:hover {
 
-    color: white;
+    color: white !important;
 }
-
-#mainNav.navbar-shrink a {
-    font-size: 1em;
-}
-
-
 
 @media all and (min-width: 768px) {
 
@@ -37,8 +28,9 @@
         font-size: 2em;
     }
 
-    #mainNav.navbar-shrink .navbar-nav a {
-        font-size: 1.5em;
+    .brand-img {
+
+        padding-left: 11vw;
     }
 }
 
