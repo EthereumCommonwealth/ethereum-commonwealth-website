@@ -4,15 +4,50 @@
     min-height: 80vh;
 }
 
-
 #about p, #about li {
+    color: var(--dark-gray);
+    font-weight: normal;
+}
 
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 29px;
-    font-size: 18px;
+.star-about {
+    width: 14px !important;
+    height: 14px !important;
+    border: 2px solid white;
+    border-radius: 50%;
+}
 
-    /* Gr */
-    color: #728699;
+.star-about-0 {
+    left: 1%;
+    top: 49%;
+}
+
+.star-about-1 {
+    top: 42%;
+    left: 13%;
+}
+
+.star-about-2 {
+    left: 32%;
+    top: 56%;
+}
+
+.star-about-3 {
+    left: 58%;
+    top: 37%;
+}
+
+.star-about-4 {
+    top: 38%;
+    left: 75%;
+
+}
+
+.star-about-5 {
+    left: 92%;
+    top: 41%;
+}
+
+.about-line {
+    position: absolute;
+
 }

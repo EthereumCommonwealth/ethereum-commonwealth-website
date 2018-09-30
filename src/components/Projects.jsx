@@ -16,13 +16,11 @@ function Projects({projectList, intl}) {
                     <img src={union} width={'15'} height={'15'}/>
                 </h2>
                 <hr className="bg-success my-3"/>
-                <div className="row">
+                <div className="row pl-5">
                     {projectList.map(project => (
-                        <div className={'col-lg-9 offset-lg-3'} key={project.name}>
                             <ProjectCard
                                 project={project}
                             />
-                        </div>
                     ))}
                 </div>
             </div>

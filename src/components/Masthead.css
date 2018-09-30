@@ -66,10 +66,10 @@ section.masthead {
 
 .bg0 {
     position: absolute;
-    width: 76%;
+    width: 76vw;
     height: 46vh;
-    left: 33%;
-    top: 69%;
+    left: 33vw;
+    top: 69vh;
     z-index: 1;
 }
 
